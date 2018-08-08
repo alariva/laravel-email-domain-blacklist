@@ -148,6 +148,7 @@ This package was inspired [on this great post by Matt Kingshott](https://medium.
 
   * [Ariel Vallese](https://www.linkedin.com/in/alariva/)
   * [Ilya Volodarsky](https://github.com/ivolo/) for maintenance of [disposable email domains repo](https://github.com/ivolo/disposable-email-domains)
+  * At symbol icon made by [Gregor Cresnar](https://www.flaticon.com/authors/gregor-cresnar) from www.flaticon.com
 
 # Package alternatives
 
