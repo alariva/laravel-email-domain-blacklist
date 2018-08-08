@@ -2,6 +2,20 @@
 
 Validate email input that it's not blacklisted for a specific domain name.
 
+## Usage
+
+Add `blacklist` to the validation rules string.
+
+```php
+  public function store(Request $request) {
+
+      $this->validate($request,
+        ['email' => 'required|email|blacklist']
+      );
+
+  }
+```
+
 # Installation
 
 Require this package with composer:
@@ -31,6 +45,16 @@ You may update the cached list with the console command (manually or scheduled).
 An auto-update option is available in case you don't want to run the command and prefer to auto-update on the first validation taking place.
 
 The validation message is translated into english and spanish, feel free to PR your language.
+
+### Laravel validator
+
+```php
+public function store(Request $request) {
+    $this->validate($request,
+      ['email' => 'required|email|blacklist']
+    );
+}
+```
 
 ## Configuration
 
@@ -64,17 +88,7 @@ Keep `null` if you don't want to append custom domains.
 
 **Example:** `example.com|example.net|foobar.com`.
 
-## Laravel validator
-
-```php
-public function store(Request $request) {
-    $this->validate($request,
-    	['email' => 'required|email|blacklist']
-    );
-}
-```
-
-## Console Updater
+## Updating the blacklist with command
 
 Manually updating the cached blacklist:
 
