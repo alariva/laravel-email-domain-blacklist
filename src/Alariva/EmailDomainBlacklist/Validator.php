@@ -2,7 +2,6 @@
 
 namespace Alariva\EmailDomainBlacklist;
 
-use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
 
 class Validator
@@ -22,14 +21,14 @@ class Validator
     public function refresh()
     {
         // Retrieve blacklisted domains from the cache
-        $this->domains = Cache::get('domains.blacklisted', []);
+        $this->domains = Cache::get(config('validation.email.blacklist.cache-key', 'email.domains.blacklist'), []);
 
-        $this->append();
+        $this->appendCustomDomains();
     }
 
-    protected function append()
+    protected function appendCustomDomains()
     {
-        $appendList = config('root.validation.email.blacklist.append');
+        $appendList = config('validation.email.blacklist.append');
 
         if ($appendList === null) {
             return;
