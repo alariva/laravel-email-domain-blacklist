@@ -14,6 +14,8 @@ class EmailDomainBlacklistServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->loadJSONTranslationsFrom(__DIR__.'/../../../lang', 'email-domain-blacklist');
+
         // Add custom validation rules
         Validator::extend('blacklist', "Alariva\EmailDomainBlacklist\Validator@validate");
         // Add custom validation messages

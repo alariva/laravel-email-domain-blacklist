@@ -53,7 +53,7 @@ class Validator
     public function message($message, $attribute, $rule, $parameters)
     {
         // Provide custom error message
-        return "The domain for $attribute is not allowed. Please use another email address.";
+        return __('The domain for :attribute is not allowed. Please use another email address.', ['attribute' => $attribute]);
     }
 
     /**
