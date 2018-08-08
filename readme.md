@@ -1,6 +1,6 @@
 # Laravel Email Domain Blacklist
 
-Validate email input that it ins not blacklisted for a specific domain name.
+Validate email input that it's not blacklisted for a specific domain name.
 
 # Installation
 
