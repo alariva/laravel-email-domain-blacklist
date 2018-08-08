@@ -22,10 +22,10 @@ class Validator
      **/
     public function refresh()
     {
-        // Retrieve blacklisted domains from the cache
-        $this->domains = Cache::get(config('validation.email.blacklist.cache-key', 'email.domains.blacklist'), []);
-
         $this->shouldUpdate();
+
+        // Retrieve blacklisted domains from the cache
+        $this->domains = Cache::get(config('validation.email.blacklist.cache-key'), []);
 
         $this->appendCustomDomains();
     }
@@ -34,7 +34,7 @@ class Validator
     {
         $autoupdate = config('validation.email.blacklist.auto-update');
 
-        if ($autoupdate && !Cache::has(config('validation.email.blacklist.cache-key', 'email.domains.blacklist'))) {
+        if ($autoupdate && !Cache::has(config('validation.email.blacklist.cache-key'))) {
             Updater::update();
         }
     }

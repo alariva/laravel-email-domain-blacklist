@@ -38,7 +38,7 @@ return [
 
             'source' => 'https://raw.githubusercontent.com/ivolo/disposable-email-domains/master/index.json',
 
-            'cache-key' => null,
+            'cache-key' => 'email.domains.blacklist',
 
             'auto-update' => false,
 
