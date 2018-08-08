@@ -9,4 +9,4 @@ before_install:
 - composer install --dev
  
 script:
-- ./vendor/bin/phpunit --coverage-clover ./tests/logs/clover.xml
+- ./vendor/bin/phpunit --coverage-clover ./tests/logs/clover.xml --configuration phpunit-travis.xml
