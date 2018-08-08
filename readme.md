@@ -1,5 +1,8 @@
 # Laravel Email Domain Blacklist
 
+[![Build Status](https://travis-ci.org/alariva/laravel-email-domain-blacklist.svg?branch=master)](https://travis-ci.org/alariva/laravel-email-domain-blacklist)
+
+
 Validate email input that it's not blacklisted for a specific domain name.
 
 <p align="center">
