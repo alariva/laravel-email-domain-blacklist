@@ -1,7 +1,12 @@
 # Laravel Email Domain Blacklist
 
 [![Build Status](https://travis-ci.org/alariva/laravel-email-domain-blacklist.svg?branch=master)](https://travis-ci.org/alariva/laravel-email-domain-blacklist)
-
+[![Latest Stable Version](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/v/stable?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
+[![Total Downloads](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/downloads?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
+[![Latest Unstable Version](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/v/unstable?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
+[![License](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/license?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
+[![Monthly Downloads](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/d/monthly?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
+[![composer.lock](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/composerlock?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
 
 Validate email input that it's not blacklisted for a specific domain name.
 
