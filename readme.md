@@ -98,6 +98,12 @@ Scheduling the cached blacklist update (example):
     // ...
 ```
 
+# Testing
+
+```
+vendor/bin/phpunit
+```
+
 # Contributing
 
 Please try to follow the psr-2 coding style guide. http://www.php-fig.org/psr/psr-2/
