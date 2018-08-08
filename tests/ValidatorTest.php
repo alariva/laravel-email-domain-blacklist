@@ -66,7 +66,7 @@ class ValidatorTest extends BaseTestCase
      * Test it allows emails with domains that are NOT blacklisted by append
      * @return void
      */
-    public function test_rejects_allows_not_blacklisted_by_append()
+    public function test_allows_not_blacklisted_by_append()
     {
     	Config::set('validation.email.blacklist.source', null);
     	Config::set('validation.email.blacklist.append', "notinsource.com|otherappend.com");
@@ -84,7 +84,7 @@ class ValidatorTest extends BaseTestCase
      * Test it allows emails with domains that are NOT blacklisted
      * @return void
      */
-    public function test_rejects_allows_not_blacklisted_by_source()
+    public function test_rejects_blacklisted_by_source()
     {
     	Config::set('validation.email.blacklist.auto-update', true);
     	Config::set('validation.email.blacklist.source', __DIR__.'/stubs/source.json');
