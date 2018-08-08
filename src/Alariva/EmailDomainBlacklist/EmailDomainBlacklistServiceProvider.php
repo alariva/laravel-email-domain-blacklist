@@ -20,6 +20,8 @@ class EmailDomainBlacklistServiceProvider extends ServiceProvider
             __DIR__.'/../../../lang' => resource_path('lang/vendor/email-domain-blacklist'),
         ]);
 
+        $this->publishConfig();
+
         // Add custom validation rules
         Validator::extend('blacklist', "Alariva\EmailDomainBlacklist\Validator@validate");
         // Add custom validation messages
@@ -33,8 +35,30 @@ class EmailDomainBlacklistServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(
-            __DIR__.'/../../../config/validation.php', 'validation'
-        );
+        $this->mergeConfig();
+
+        $this->app->bind('command.blacklist:update-email-domains', BlacklistUpdateEmailDomainsCommand::class);
+
+        $this->commands([
+            'command.blacklist:update-email-domains',
+        ]);
     }
+
+    private function publishConfig()
+    {
+        $path = $this->getConfigPath();
+        $this->publishes([$path => config_path('validation.php')], 'config');
+    }
+
+    private function getConfigPath()
+    {
+        return __DIR__.'/../../../config/validation.php';
+    }
+
+    private function mergeConfig()
+    {
+        $path = $this->getConfigPath();
+        $this->mergeConfigFrom($path, 'validation');
+    }
+
 }

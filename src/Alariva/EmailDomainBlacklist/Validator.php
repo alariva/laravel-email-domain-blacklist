@@ -2,6 +2,8 @@
 
 namespace Alariva\EmailDomainBlacklist;
 
+use Alariva\EmailDomainBlacklist\Updater;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
 
 class Validator
@@ -23,7 +25,18 @@ class Validator
         // Retrieve blacklisted domains from the cache
         $this->domains = Cache::get(config('validation.email.blacklist.cache-key', 'email.domains.blacklist'), []);
 
+        $this->shouldUpdate();
+
         $this->appendCustomDomains();
+    }
+
+    protected function shouldUpdate()
+    {
+        $autoupdate = config('validation.email.blacklist.auto-update');
+
+        if ($autoupdate && !Cache::has(config('validation.email.blacklist.cache-key', 'email.domains.blacklist'))) {
+            Updater::update();
+        }
     }
 
     protected function appendCustomDomains()
