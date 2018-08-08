@@ -102,7 +102,7 @@ Default: `false`
 
 ### append: string|null
 
-You may a string of pipe `|` separated domains list.
+You may use a string of pipe `|` separated domains list.
 
 Keep `null` if you don't want to append custom domains.
 
@@ -116,11 +116,13 @@ Manually updating the cached blacklist:
 php artisan blacklist:update-email-domains
 ```
 
+It's OK if you run this command after a deploy and refresh on a weekly/monthly basis.
+
 Scheduling the cached blacklist update (example):
 
 ```php
 
-	// app/Console/Kernel.php @schedule
+    // app/Console/Kernel.php @schedule
 
     // ...
     $schedule->command('blacklist:update-email-domains')
@@ -137,6 +139,10 @@ Scheduling the cached blacklist update (example):
 ```
 vendor/bin/phpunit
 ```
+
+# Projects using this package
+
+I built this package to off-load some code in my application [Fimedi NET](https://www.fimedi.net), a clinical nutrition control app for dietitians and patients.
 
 # Contributing
 
