@@ -2,6 +2,7 @@
 
 namespace Alariva\EmailDomainBlacklist;
 
+use Alariva\EmailDomainBlacklist\Validator as CustomValidator;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 

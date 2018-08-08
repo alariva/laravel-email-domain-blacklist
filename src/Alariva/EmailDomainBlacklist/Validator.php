@@ -47,7 +47,7 @@ class Validator
             return;
         }
 
-        $appendDomains = explode('|', $appendList);
+        $appendDomains = explode('|', strtolower($appendList));
 
         $this->domains = array_merge($this->domains, $appendDomains);
     }
