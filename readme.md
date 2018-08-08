@@ -158,8 +158,9 @@ This package was inspired [on this great post by Matt Kingshott](https://medium.
 
 # Package alternatives
 
-  * [Laravel-Email-Domain-Validation](https://github.com/madeITBelgium/Laravel-Email-Domain-Validation)
+  * [Laravel-Email-Domain-Validation - madeITBelgium](https://github.com/madeITBelgium/Laravel-Email-Domain-Validation)
+  * [Laravel Email Domain Validation - jonathanjanssens](https://github.com/jonathanjanssens/laravel-validate-email-domain)
 
 # License
 
-MIT
+[MIT](https://opensource.org/licenses/MIT)
