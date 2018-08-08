@@ -2,6 +2,10 @@
 
 Validate email input that it's not blacklisted for a specific domain name.
 
+<p align="center">
+<img src="https://i.imgur.com/tn0kvs5.png" height="275">
+</p>
+
 ## Usage
 
 Add `blacklist` to the validation rules string.
