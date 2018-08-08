@@ -44,6 +44,14 @@ If you are using Laravel <= 5.4 manually add the Service Provider to the provide
 Alariva\EmailDomainBlacklist\EmailDomainBlacklistServiceProvider::class,
 ```
 
+Publish the package config:
+
+```
+php artisan vendor:publish --provider="Alariva\EmailDomainBlacklist\EmailDomainBlacklistServiceProvider" --tag=config
+```
+
+
+
 # Documentation
 
 Laravel Email Domain Blacklist is a lightweight package that extends your validation rules with `blacklist`.
