@@ -1,0 +1,13 @@
+{
+    "name": "alariva/laravel-email-domain-blacklist",
+    "description": "A Laravel package for adding email domain blacklist validation rule",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ariel Vallese",
+            "email": "alariva@gmail.com"
+        }
+    ],
+    "require": {}
+}
