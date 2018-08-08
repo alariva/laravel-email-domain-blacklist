@@ -144,8 +144,10 @@ Please try to follow the psr-2 coding style guide. http://www.php-fig.org/psr/ps
 
 # Credits
 
+This package was inspired [on this great post by Matt Kingshott](https://medium.com/@mattkingshott/laravel-validation-rule-block-disposable-email-blacklisted-domains-949cab9c59fe)
+
   * [Ariel Vallese](https://www.linkedin.com/in/alariva/)
-  * This package was inspired [on this great post by Matt Kingshott](https://medium.com/@mattkingshott/laravel-validation-rule-block-disposable-email-blacklisted-domains-949cab9c59fe)
+  * [Ilya Volodarsky](https://github.com/ivolo/) for maintenance of [disposable email domains repo](https://github.com/ivolo/disposable-email-domains)
 
 # Package alternatives
 
