@@ -11,11 +11,22 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "illuminate/support": "^5.6"
+        "illuminate/support": "^5.6",
+        "phpunit/phpunit": "^7.3"
     },
     "autoload": {
         "psr-4": {
             "Alariva\\EmailDomainBlacklist\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/DemoTest.php"
+        ],
+        "psr-4": {
+            "Alariva\\EmailDomainBlacklist\\": "src/",
+            "Alariva\\EmailDomainBlacklist\\Tests\\": "tests/"
+
         }
     },
     "extra": {

@@ -60,5 +60,4 @@ class EmailDomainBlacklistServiceProvider extends ServiceProvider
         $path = $this->getConfigPath();
         $this->mergeConfigFrom($path, 'validation');
     }
-
 }
