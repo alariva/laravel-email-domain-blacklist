@@ -1,6 +1,8 @@
 # Laravel Email Domain Blacklist
 
 [![Build Status](https://travis-ci.org/alariva/laravel-email-domain-blacklist.svg?branch=master)](https://travis-ci.org/alariva/laravel-email-domain-blacklist)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1051addffff433649030/maintainability)](https://codeclimate.com/github/alariva/laravel-email-domain-blacklist/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1051addffff433649030/test_coverage)](https://codeclimate.com/github/alariva/laravel-email-domain-blacklist/test_coverage)
 [![Latest Stable Version](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/v/stable?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
 [![Total Downloads](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/downloads?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
 [![Latest Unstable Version](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/v/unstable?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
