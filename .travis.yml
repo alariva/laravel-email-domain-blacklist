@@ -14,7 +14,7 @@ before_script:
 - ./cc-test-reporter before-build
  
 script:
-- ./vendor/bin/phpunit --coverage-clover ./tests/logs/clover.xml --configuration phpunit-travis.xml
+- ./vendor/bin/phpunit --coverage-clover ./build/logs/clover.xml --configuration phpunit-travis.xml
 
 after_script: 
 - mv build/logs/clover.xml clover.xml 
