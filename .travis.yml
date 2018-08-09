@@ -7,6 +7,15 @@ php:
 
 before_install:
 - composer install --dev
+
+before_script: 
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+- chmod +x ./cc-test-reporter 
+- ./cc-test-reporter before-build
  
 script:
 - ./vendor/bin/phpunit --coverage-clover ./tests/logs/clover.xml --configuration phpunit-travis.xml
+
+after_script: 
+- mv build/logs/clover.xml clover.xml 
+- ./cc-test-reporter after-build --coverage-input-type clover --id $CODECLIMATE_REPO_TOKEN --exit-code $TRAVIS_TEST_RESULT
