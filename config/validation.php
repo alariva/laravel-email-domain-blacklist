@@ -30,6 +30,12 @@ return [
     |         Keep null if you don't want to append custom domains.
     |         Example: "example.com|example.net|foobar.com".
     |
+    | custom_message: string|null
+    |         You may override the default custom message translation key.
+    |         Example: "domain not allowed".
+    |         Example: "validation.key".
+    |         Default: null
+    |
     */
 
     'email' => [
@@ -43,6 +49,8 @@ return [
             'auto-update' => false,
 
             'append' => null,
+
+            'custom_message' => null,
 
         ],
 

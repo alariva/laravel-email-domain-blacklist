@@ -65,7 +65,8 @@ class Validator
     public function message($message, $attribute, $rule, $parameters)
     {
         // Provide custom error message
-        return __('The domain for :attribute is not allowed. Please use another email address.', ['attribute' => $attribute]);
+        $custom_message_key = config('validation.email.blacklist.custom_message');
+        return   $custom_message_key ? __($custom_message_key) : __('The domain for :attribute is not allowed. Please use another email address.', ['attribute' => $attribute]);
     }
 
     /**
