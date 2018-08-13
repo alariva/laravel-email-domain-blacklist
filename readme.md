@@ -136,6 +136,12 @@ Scheduling the cached blacklist update (example):
     // ...
 ```
 
+## Overriding translation
+
+Simply add the JSON translation key to your main project translations, and this will override the package validation message.
+
+[More info on overriding translation](https://github.com/laravel/framework/pull/20599#issue-136044259)
+
 # Testing
 
 ```
