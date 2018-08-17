@@ -5,10 +5,16 @@ php:
   - '7.2'
   - nightly
 
+env:
+  matrix:
+    - PREFER_LOWEST="--prefer-lowest --prefer-stable"
+    - PREFER_LOWEST=""
+
 before_install:
 - composer install --dev
 
 before_script: 
+- composer update $PREFER_LOWEST
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
 - chmod +x ./cc-test-reporter 
 - ./cc-test-reporter before-build
