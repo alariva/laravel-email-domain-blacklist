@@ -11,11 +11,10 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "laravel/framework": "^5.6",
-        "illuminate/support": "^5.6"
+        "laravel/framework": "^5.6 || ^5.5 || ^5.4 || ^5.3 || ^5.2 || ^5.1",
+        "illuminate/support": "^5.6 || ^5.5 || ^5.4 || ^5.3 || ^5.2 || ^5.1"
     },
     "require-dev": {
-        "laravel/framework": "^5.6",
         "phpunit/phpunit": "^7.3",
         "orchestra/testbench": "^3.6",
         "mockery/mockery": "^1.1"
