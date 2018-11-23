@@ -9,6 +9,7 @@
 [![License](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/license?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
 [![Monthly Downloads](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/d/monthly?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
 [![composer.lock](https://poser.pugx.org/alariva/laravel-email-domain-blacklist/composerlock?format=flat)](https://packagist.org/packages/alariva/laravel-email-domain-blacklist)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falariva%2Flaravel-email-domain-blacklist.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Falariva%2Flaravel-email-domain-blacklist?ref=badge_shield)
 
 Validate email input that it's not blacklisted for a specific domain name.
 
@@ -172,3 +173,6 @@ This package was inspired [on this great post by Matt Kingshott](https://medium.
 # License
 
 [MIT](https://opensource.org/licenses/MIT)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falariva%2Flaravel-email-domain-blacklist.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Falariva%2Flaravel-email-domain-blacklist?ref=badge_large)
