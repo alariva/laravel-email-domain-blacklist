@@ -16,7 +16,7 @@ class ConsoleTest extends BaseTestCase
 
     protected $stubPath = __DIR__.'/stubs/source.json';
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
