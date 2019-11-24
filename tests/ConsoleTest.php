@@ -14,9 +14,9 @@ class ConsoleTest extends BaseTestCase
 
     protected $commandTester;
 
-    protected $stubPath = __DIR__.'/stubs/source.json';
+    protected $stubPath = __DIR__ . '/stubs/source.json';
 
-    public function setUp()
+    protected function setUp() : void
     {
         parent::setUp();
 

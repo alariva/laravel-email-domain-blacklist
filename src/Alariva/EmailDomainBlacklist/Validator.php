@@ -5,6 +5,7 @@ namespace Alariva\EmailDomainBlacklist;
 use Alariva\EmailDomainBlacklist\Updater;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Str;
 
 class Validator
 {
@@ -81,7 +82,7 @@ class Validator
     {
         $this->refresh();
 
-        $domain = str_after(strtolower($value), '@');
+        $domain = Str::after(strtolower($value), '@');
 
         return !in_array($domain, $this->domains);
     }
