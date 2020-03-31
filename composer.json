@@ -3,6 +3,16 @@
     "description": "A Laravel package for adding email domain blacklist validation rule",
     "type": "library",
     "license": "MIT",
+<<<<<<< Updated upstream
+=======
+    "repositories": [
+
+        {
+            "type": "vcs",
+            "url": "https://github.com/ntavb/laravel-email-domain-blacklist"
+        }
+    ],
+>>>>>>> Stashed changes
     "authors": [
         {
             "name": "Ariel Vallese",
