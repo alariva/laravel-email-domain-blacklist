@@ -42,7 +42,7 @@ class BlacklistUpdateEmailDomainsCommand extends Command
         $count = Updater::update();
 
         if ($count === false) {
-            $this->warning('No domains retrieved. Check the email.blacklist.source key for validation config.');
+            $this->warn('No domains retrieved. Check the email.blacklist.source key for validation config.');
 
             return;
         }
