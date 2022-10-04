@@ -59,15 +59,15 @@ php artisan vendor:publish --provider="Alariva\EmailDomainBlacklist\EmailDomainB
 
 Laravel Email Domain Blacklist is a lightweight package that extends your validation rules with `blacklist`.
 
-You may pass a local or remote JSON file containing all the blacklisted email domains, usually those that are disposable email services.
+You may pass a local or remote JSON file containing all the blacklisted email domains, usually disposable email services.
 
-In case you are using a third-party remote list you may also append your custom email domains.
+If you use a third-party remote list, you may also append your custom email domains.
 
 You may update the cached list with the console command (manually or scheduled).
 
-An auto-update option is available in case you don't want to run the command and prefer to auto-update on the first validation taking place.
+An auto-update option is available if you don't want to run the command and prefer to auto-update on the first validation.
 
-The validation message is translated into english and spanish, feel free to PR your language.
+The validation message translation is available in English and Spanish; feel free to PR your translation.
 
 ### Laravel validator
 
@@ -97,7 +97,7 @@ Keep `null` if you want to use the default value.
 
 ### auto-update: true|false
 
-Specify if should automatically get source when cache is empty.
+Specify if it should automatically get the source when the cache is empty.
 
 **ADVICE:** This may slow down the first request upon validation.
 
@@ -119,7 +119,7 @@ Manually updating the cached blacklist:
 php artisan blacklist:update-email-domains
 ```
 
-It's OK if you run this command after a deploy and refresh on a weekly/monthly basis.
+It's OK if you run this command after deployment and refresh it on a weekly/monthly basis.
 
 Scheduling the cached blacklist update (example):
 
@@ -139,7 +139,7 @@ Scheduling the cached blacklist update (example):
 
 ## Overriding translation
 
-Simply add the JSON translation key to your main project translations, and this will override the package validation message.
+Add the JSON translation key to your project core translations, which will override the package validation message.
 
 [More info on overriding translation](https://github.com/laravel/framework/pull/20599#issue-136044259)
 
@@ -151,7 +151,11 @@ vendor/bin/phpunit
 
 # Projects using this package
 
-I built this package to off-load some code in my application [Fimedi NET](https://www.fimedi.net), a clinical nutrition control app for dietitians and patients.
+I built this package to offload some code in my application [Fimedi NET](https://www.fimedi.net), a clinical nutrition control app for dietitians and patients.
+
+# ToDo
+
+  * Update the project lexicon to avoid the use of offensive terms.
 
 # Contributing
 
